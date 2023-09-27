@@ -47,3 +47,28 @@
     margin: 0.5em;
 
 }
+
+ #demo{
+    padding: 0.5em;
+    background-color: #27AE60;
+    border: 0.25em solid #2D9CDB;
+    
+ /* Do not forget the behaviour known as margin collapsing. When two elements have two different margins, they will be separated by the highest one.  */
+    margin: 0.5em;
+    
+ }
+
+ .datebtn {
+   
+    padding: 1em;
+    background-color: #2793ae;
+    border: 0.2em solid #f7950b;
+    
+ /* Do not forget the behaviour known as margin collapsing. When two elements have two different margins, they will be separated by the highest one.  */
+    margin: 0.5em;
+
+}
+
+ .datebtn:hover{
+    background-color: #45a049;
+ }
