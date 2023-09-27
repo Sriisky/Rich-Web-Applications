@@ -1,4 +1,12 @@
 /* Everything in CSS is a box (text, button, div...). The box is composed by the content, the padding, the border and the margin */
+/* em is depends on font size, this means if the font size is bigger or smaller the sizes will be in proportion
+   em may be different for each element. rem is the font size of the root element and is constant throughout
+   (2em means 2 times the size of the current font)
+   e.g. give P and H1 elements the same left margin
+   old - p { margin-left: 1em }
+         h1 { font-size: 3em; margin-left: 0.333em }
+   new - p { margin-left: 1rem }
+         h1 { font-size: 3em; margin-left: 1rem }*/
 * { 
     /* Here we are saying that the box should occupy only the space of the content */
      padding: 0;
@@ -8,11 +16,11 @@
  
  .box-one {    
  /* I can add a padding to the content, adding background to the element (and, consequently, more space around it) */
-     padding: 0em;
+     padding: 1em;
      background-color: #EB5757;
      
  /* the border goes around the padding */
-     border: 0em solid #27AE60;
+     border: 0.25em solid #27AE60;
      
  /* the margin is added to increase the space between two elements as it is outside the border. */
      margin: 0.5em;
@@ -20,11 +28,22 @@
  
  .box-two {
    
-     padding: 0.1em;
+     padding: 0.7em;
      background-color: #2D9CDB;
-     border: 0 solid #27AE60;
+     border: 0.25em solid #EB5757;
      
   /* Do not forget the behaviour known as margin collapsing. When two elements have two different margins, they will be separated by the highest one.  */
-     margin: 0em;
+     margin: 0.5em;
  
  }
+
+ .box-three {
+   
+    padding: 0.5em;
+    background-color: #27AE60;
+    border: 0.25em solid #2D9CDB;
+    
+ /* Do not forget the behaviour known as margin collapsing. When two elements have two different margins, they will be separated by the highest one.  */
+    margin: 0.5em;
+
+}
