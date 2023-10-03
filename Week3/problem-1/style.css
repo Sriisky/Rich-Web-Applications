@@ -1,0 +1,58 @@
+        /* Define styles for the outer grid */
+        .outer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Repeat for the 4 cells equal width. fr stands for fraction */
+            border: 1px solid black;
+        }
+        
+        /* Define styles for the inner grids */
+        .inner-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border: 1px solid black;
+        }
+
+        /* Define styles for the outer cells */
+        .outer-grid-item {
+            border: 1px solid black;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        /* Define styles for the inner cells */
+        .grid-item {
+            border: 1px solid black;
+            padding: 0.35em;
+            text-align: center;
+        }
+
+        /* Give each outer cell a colour*/
+        .outer-grid-item {
+            background-color: rgb(178, 248, 158);
+        }
+
+        /* Give each inner cell a colour*/
+        .grid-item {
+            background-color: rgb(248, 158, 233);
+        }
+
+        /* Media query for screens less than 960px.
+           Media queries are used only if a certain condition is true */
+        @media only screen and (max-width: 960px) {
+            .outer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .inner-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Media query for screens less than 640px */
+        @media only screen and (max-width: 640px) {
+            .outer-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .inner-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
