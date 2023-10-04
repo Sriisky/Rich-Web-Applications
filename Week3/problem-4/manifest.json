@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "catsAreTheBest",
+    "name": "HelloKittyFan",
     "version": "1.0.0",
     "content_scripts": [
         {
