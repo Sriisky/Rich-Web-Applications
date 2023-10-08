@@ -4,16 +4,16 @@ const notes = [];
 function addNote() {
     // Get references to input and select elements
     const noteInput = document.getElementById("note-input");
-    const colorSelect = document.getElementById("color-select");
+    const colourSelect = document.getElementById("colour-select");
 
     // Get the text and colour chosen by the user
     const noteText = noteInput.value;
-    const noteColor = colorSelect.value;
+    const noteColour = colourSelect.value;
 
     // Create a note object and add it to the notes array
     const note = {
         text: noteText,
-        color: noteColor,
+        color: noteColour,
     };
 
     notes.push(note); // Add the new note to the array
