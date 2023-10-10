@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Directory</title>
+</head>
+<body>
+
+    <h1>Phone Directory</h1>
+
+    <div class="addContContainer">
+
+        <!-- Where the user will enter in their information-->
+        <div class="contactForm">
+            <input type="text" id="Contname" placeholder="Contact Name">
+            <input type="text" id="Contmobile" placeholder="Mobile Number">
+            <input type="text" id="Contemail" placeholder="Email">
+
+            <button id="addContact">Add Contact</button>
+        </div>
+
+        <!-- Error message alerts-->
+        <div id="error" class="error-message"></div>
+
+    </div>
+
+    <h2>Search by Mobile Number</h2>
+    <div class="searchNum">
+    <input type="text" id="searchInput" placeholder="Search by Mobile Number">
+    </div>
+
+    <!-- Where the contacts will be displayed-->
+    <h2>Contacts Summary</h2>
+    <div class="contacts" id="contactsContainer">
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th id="sortName" class="sort">Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+</body>
+</html>
