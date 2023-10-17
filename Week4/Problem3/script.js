@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 repoList.innerHTML = "<h2>User Repos</h2>";
                 if (repos.length > 5) {
-                    repoList.style.maxHeight = "400px"; //set a max height
+                    repoList.style.maxHeight = "460px"; //set a max height
                     repoList.style.overflowY = "auto";   //add a scrollbar
                 }
 
