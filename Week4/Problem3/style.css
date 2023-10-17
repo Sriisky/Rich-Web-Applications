@@ -13,16 +13,20 @@ h1 {
     position: relative;
     width: 40%;
     padding: 0.75em;
-    margin: 0.5em;
+    margin: 2em;
+    margin-left: 5em;
     background-color: #fbfede;
+
 }
 
 .repos {
     position: relative;
-    width: 50%;
+    width: 40%;
     padding: 0.75em;
-    margin: 0.5em;
+    margin: 2em;
+    margin-left: 5em;
     background-color: #fbfede;
+    overflow-y: auto;
 }
 
 input[type="text"] {
@@ -44,16 +48,6 @@ button {
 
 button:hover {
     background-color: #087fff;
-}
-
-#userInfo {
-    margin-top: 20px;
-}
-
-#repoList {
-    max-height: 0;  /* Initially, hide the list */
-    overflow-y: hidden;  /* Hide scrollbar */
-    transition: max-height 0.3s;  /* Add a smooth transition effect */
 }
 
 .error-message {

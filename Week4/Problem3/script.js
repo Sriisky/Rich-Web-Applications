@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const repoList = document.getElementById("repoList");
 
     searchButton.addEventListener("click", () => {
-        const username = GithubUsername.value.trim();
+        const username = GithubUsername.value.trim(); //remove whitespaces
         if (username === "") {
             alert("You must enter a GitHub GithubUsername");
             return;
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then((userData) => {
                 userInfo.innerHTML = `
                     <h2>User Profile</h2>
-                    <img src="${userData.avatar_url}" alt="Profile picture" width="100">
+                    <img src="${userData.avatar_url}" alt="Profile picture" width="220em" height="200em">
                     <p>Name: ${userData.name}</p>
                     <p>Username: ${userData.login}</p>
                     <p>Email: ${userData.email || "Not available"}</p>
@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 repoList.innerHTML = "<h2>User Repos</h2>";
                 if (repos.length > 5) {
-                    repoList.style.maxHeight = "200px"; // Set a maximum height
-                    repoList.style.overflowY = "auto";   // Add scrollbar
+                    repoList.style.maxHeight = "400px"; //set a max height
+                    repoList.style.overflowY = "auto";   //add a scrollbar
                 }
 
                 repos.forEach((repo) => {
