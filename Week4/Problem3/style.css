@@ -1,0 +1,62 @@
+body {
+    font-family: Sans-serif, Verdana;
+    background-color: #f8dffb;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.users {
+    float: left;
+    position: relative;
+    width: 40%;
+    padding: 0.75em;
+    margin: 0.5em;
+    background-color: #fbfede;
+}
+
+.repos {
+    position: relative;
+    width: 50%;
+    padding: 0.75em;
+    margin: 0.5em;
+    background-color: #fbfede;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    margin: 0.5em;
+}
+
+button {
+    padding: 0.75em;
+    background-color: #61caff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    width: 20%;
+}
+
+button:hover {
+    background-color: #087fff;
+}
+
+#userInfo {
+    margin-top: 20px;
+}
+
+#repoList {
+    max-height: 0;  /* Initially, hide the list */
+    overflow-y: hidden;  /* Hide scrollbar */
+    transition: max-height 0.3s;  /* Add a smooth transition effect */
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
