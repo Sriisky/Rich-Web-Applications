@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         contacts.push(contact); //put the new contact into the contacts array
         updateTable(); //add to the table
         clearInputs(); // clear the input fields
+        console.log(contacts);
     });
 
 
