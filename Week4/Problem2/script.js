@@ -3,7 +3,7 @@ const apiUrl = "http://jsonplaceholder.typicode.com/posts";
 
 //Task 1: List all of the post titles having more than six words
 //fetching the data from the API
-/* fetch(apiUrl) //send GET request to apiUrl
+ fetch(apiUrl) //send GET request to apiUrl
   .then((response) => response.json()) //parse response to json
   //filter posts
   .then((data) => {
@@ -14,7 +14,7 @@ const apiUrl = "http://jsonplaceholder.typicode.com/posts";
 
     //display the titles
     console.log(result);
-  }) */
+  }) 
 
 
 //Task 2: Show a word frequency map for all of the body contents of the posts
