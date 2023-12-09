@@ -1,38 +1,111 @@
-.App {
+body {
+  font-family: Sans-serif, Verdana;
+  background-color: #f1cff5;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.note-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type="text"] {
+  width: 60%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.75em;
+  background-color: #52a6ff;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+select {
+  width: 30%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.notes {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.note {
+  padding: 0.35em;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4%;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catFactSection{
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.catFactSection p {
+  margin-top: 0.5em;
+  color: #333; 
+}
+
+.search-section {
+  margin-top: 1em;
+}
+
+.search-section input {
+  width: 60%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-section {
+  margin: 1em 0;
+}
+
+.filter-section button {
+  margin-right: 0.5em;
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: #149be9; 
+  border: 1px solid #ccc;
+}
+
+.react-datepicker-wrapper {
+  margin: 0 0.5em;
+}
+
+.note p {
+  margin: 5px 0;
+}
+
+.react-datepicker-wrapper {
+  margin: 0 0.5em;
 }
