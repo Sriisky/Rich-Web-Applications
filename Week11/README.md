@@ -2,9 +2,10 @@
 
 Node-modules have been removed from submission due to size contraints.
 
-First run - npm start
-then - npm install axios
-then - npm install react datepicker
+Run the following commands in the command line before executing the code
+ - npm start
+ - npm install axios
+ - npm install react datepicker
 
 Problem 1 - Was completed by running npx create-react-app react-note-app and converting Lab 1 Problem 1 into the React project.
 
@@ -14,3 +15,5 @@ Problem 3 - Additional functionalities include the following.
 1. A search function that allows users to search for notes based on common letters and words contained within each of the notes. 
 2. The notes can now be refined to show only notes of a given colour, or you can also view all notes. 
 3. A date is allocated to the note which can be changed by clicking the 'edit' button of a note. Can search by dates.
+
+Lecture review questions can be found in the Exercises.md file.
