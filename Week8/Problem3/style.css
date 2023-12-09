@@ -1,0 +1,67 @@
+body {
+    font-family: Sans-serif, Verdana;
+    background-color: #f1cff5;
+    text-align: center;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+}
+
+.note-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 0.75em;
+    background-color: #52a6ff;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-right: 10px; /* Adds spacing to the right of each button */
+}
+
+button:last-child {
+    margin-right: 0; /* Ensures that the last button does not have right margin */
+}
+
+select {
+    width: 30%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note {
+    padding: 0.35em;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+    width: 100%;
+}
+
+.note-actions {
+    display: flex;
+    justify-content: space-between;
+}
